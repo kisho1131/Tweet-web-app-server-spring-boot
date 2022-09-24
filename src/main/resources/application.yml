@@ -1,0 +1,5 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://sumit:sumit@cluster-0.4a1lnvi.mongodb.net/?retryWrites=true&w=majority
+      database: tweetapp-db
