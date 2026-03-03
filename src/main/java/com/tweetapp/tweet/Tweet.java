@@ -7,62 +7,62 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document("tweet")
 public class Tweet {
-	
-	@Id
-	private long id;
-	
-	private String loginId;
-	private String tweets;
-	private Date date;
-	
-	public Tweet() {}
-	
-	public Tweet(long id, String loginId, String tweets, Date date) {
-		super();
-		this.id = id;
-		this.loginId = loginId;
-		this.tweets = tweets;
-		this.date = date;
-	}
 
-	public long getId() {
-		return id;
-	}
+  @Id
+  private long id;
 
-	public void setId(long id) {
-		this.id = id;
-	}
+  private String loginId;
+  private String tweets;
+  private Date date;
 
-	public String getLoginId() {
-		return loginId;
-	}
+  public Tweet() {
+  }
 
-	public void setLoginId(String loginId) {
-		this.loginId = loginId;
-	}
+  public Tweet(long id, String loginId, String tweets, Date date) {
+    super();
+    this.id = id;
+    this.loginId = loginId;
+    this.tweets = tweets;
+    this.date = date;
+  }
 
-	public String getTweets() {
-		return tweets;
-	}
+  public long getId() {
+    return id;
+  }
 
-	public void setTweets(String tweets) {
-		this.tweets = tweets;
-	}
+  public void setId(long id) {
+    this.id = id;
+  }
 
-	public Date getDate() {
-		return date;
-	}
+  public String getLoginId() {
+    return loginId;
+  }
 
-	public void setDate(Date date) {
-		this.date = date;
-	}
+  public void setLoginId(String loginId) {
+    this.loginId = loginId;
+  }
 
-	@Override
-	public String toString() {
-		return "Tweet [id=" + id + ", loginId=" + loginId + ", tweets=" + tweets + ", date=" + date + "]";
-	}
-	
-	
-	
+  public String getTweets() {
+    return tweets;
+  }
+
+  public void setTweets(String tweets) {
+    this.tweets = tweets;
+  }
+
+  public Date getDate() {
+    return date;
+  }
+
+  public void setDate(Date date) {
+    this.date = date;
+  }
+
+  @Override
+  public String toString() {
+    return "Tweet [id=" + id + ", loginId=" + loginId + ", tweets=" + tweets + ", date=" + date
+        + "]";
+  }
+
 
 }

@@ -7,11 +7,11 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface LikesRepository extends MongoRepository<Likes, String> {
-	
-	@Query("{'id' : ?0}")
-	Likes getLikeById(long id);
-	
-	@Query(value="{'id' : ?0}", delete=true)
-	Likes deleteById(long id);
+
+  @Query("{'id' : ?0}")
+  Likes getLikeById(long id);
+
+  @Query(value = "{'id' : ?0}", delete = true)
+  Likes deleteById(long id);
 
 }

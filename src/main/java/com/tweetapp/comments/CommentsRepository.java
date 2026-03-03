@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CommentsRepository extends MongoRepository<Comments, String> {
-	
-	@Query("{'tweetId' : ?0}")
-	List<Comments> getAllBytweetId(long tweetId, Sort sort);
+
+  @Query("{'tweetId' : ?0}")
+  List<Comments> getAllBytweetId(long tweetId, Sort sort);
 }
